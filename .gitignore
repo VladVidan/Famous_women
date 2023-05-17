@@ -205,7 +205,6 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
 db.sqlite3-journal
 
 # Flask stuff:
@@ -353,5 +352,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+.gitignore
 
 # End of https://www.toptal.com/developers/gitignore/api/python,venv,pycharm,linux,windows,git
