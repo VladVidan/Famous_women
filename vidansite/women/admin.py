@@ -17,7 +17,7 @@ class WomenAdmin(admin.ModelAdmin):
         if object.photo:
             return mark_safe(f"<img src='{object.photo.url}' width=60>")
 
-    get_html_photo.short_description = 'Миниатюра'
+    get_html_photo.short_description = 'Фото'
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -30,5 +30,5 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Women, WomenAdmin)
 admin.site.register(Category, CategoryAdmin)
 
-admin.site.site_title = "Админ-панель сайта о известных женщинах"
-admin.site.site_header = "Админ-панель сайта о известных женщинах"
+admin.site.site_title = "Адмін-панель сайт про відомих жінок"
+admin.site.site_header = "Адмін-панель сайт про відомих жінок"

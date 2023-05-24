@@ -4,7 +4,7 @@
 <ul class="list-articles">
 	{% for p in posts %}
 			<li><div class="article-panel">
-				<p class="first">Категория: {{p.cat}}</p>
+				<p class="first">Категорія: {{p.cat}}</p>
 				<p class="last">Дата: {{p.time_update|date:"d-m-Y H:i:s"}}</p>
 			</div>
 
@@ -17,7 +17,7 @@
 	{{p.content|linebreaks|truncatewords:15}}
 	{% endautoescape %}
 			<div class="clear"></div>
-			<p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читать пост</a></p>
+			<p class="link-read-post"><a href="{{ p.get_absolute_url }}">Читати пост</a></p>
 			</li>
 	{% endfor %}
 </ul>
