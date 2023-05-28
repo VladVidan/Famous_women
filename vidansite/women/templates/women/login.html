@@ -1,4 +1,5 @@
 {% extends 'women/base.html' %}
+{% load socialaccount %}
 
 {% block content %}
 <h1>{{title}}</h1>
@@ -14,6 +15,8 @@
   {% endfor %}
 
   <button type="submit">Увійти</button>
-</form>
-
+  <form/>
+<p>
+<a href="{% provider_login_url 'google'%}?next=/"><button type="button">Увійти за допомогою Google</button></a>
+<p/>
 {% endblock %}
